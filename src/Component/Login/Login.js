@@ -15,7 +15,7 @@ function Login(){
             <input type="password" placeholder="test@gmail.com" className='Allinput'/>
              <div className='inputlabel'>password</div>
             <input type="password" placeholder="pass1234" className='Allinput'/>
-            <button className='registerButton'>Login</button>
+            <button className='registersandloginpageButton'>Login</button>
         </div>
     );
 }

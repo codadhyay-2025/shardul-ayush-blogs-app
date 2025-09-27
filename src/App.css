@@ -8,3 +8,37 @@
     background-color: white;
 
 }
+.RegisterBlog{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.register{
+    text-align: center;
+    color: navy;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0px;
+}.inputlabel{
+    font-weight: 500;
+}
+.Allinput{
+    padding: 13px ;;
+    width:92%;
+    margin: 7px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.registersandloginpageButton{
+    width: 100%;
+    padding:10px;
+    text-decoration: underline;
+    font-size:15px;
+    border-radius: 7px;
+    border: none;
+    background-color: navy;
+    color:white;
+    margin: 20px 0px;
+
+
+}
