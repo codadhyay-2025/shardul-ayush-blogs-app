@@ -1,12 +1,16 @@
 .pageheader{
     display: flex;
     justify-content: space-between;
-    padding:15px;
-    background-color: rgb(157, 126, 85);
-    color: white;
+    padding:15px 28px;
+    background-color: rgb(235, 227, 217);  
+    color: black;
     font-size: 20px;
+
     font-weight: bold;
 
+}
+.headerblog{
+    font-size: 25px;
 }
 .loginregisterbutton{
     display: flex;

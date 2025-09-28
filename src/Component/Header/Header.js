@@ -6,7 +6,7 @@ function Header(){
 
     return(
     <div className="pageheader">
-        <div>Blogs</div>
+        <div className='headerblog'>Blogs</div>
         <div className='loginregisterbutton'>
         <div>Login </div>
         <div>Register</div>

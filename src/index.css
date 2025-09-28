@@ -1,14 +1,32 @@
 body {
-  background-color: lightgray;
-  margin: 0;
+  margin: 0px;
+  /* background-color: lightgray; */
+    text-align: center;
+  min-width: 100%;  
+  min-height: 670px;
+  background-size: cover;
+  background-size: auto;
+  background-size: 1750px 950px;
+  /* background-repeat: no-repeat; */
+  background-image: url("https://img.freepik.com/free-photo/technology-communication-icons-symbols-concept_53876-120314.jpg");
+  /* background-image: ; */
+  /* margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* }
+.backgroundimg{
+  width: 100%;
+  height: 700px  ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://img.freepik.com/free-photo/technology-communication-icons-symbols-concept_53876-120314.jpg");
+} */
