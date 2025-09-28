@@ -5,13 +5,27 @@ import Register from './Component/Register/Register';
 import Login from './Component/Login/Login';
 import Dashboard from './Component/Dashboard/Dashboard';
 import Blogs from './Component/Blogs/Blogs';
+import { BrowserRouter as  Router, Routes,Route } from 'react-router-dom';
 function App() {
   return (
 
     <div>
-      <Header />/
+      
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path="/register" element={<Register/>}  />
+          <Route path="/login" element={<Login/>}  />
+          <Route path="/blogs" element={<Blogs/>}  />
+          <Route path="/" element={<Dashboard/>}  />
+          {/* <Route path="/register" element={<Register/>} /> */}
+
+          
+        </Routes>
+      </Router>
+      
       {/* <Dashboard /> */}
-      <Register />
+      {/* <Register /> */}
       {/* <Login /> */}
       {/* <Blogs /> */}
     </div>
