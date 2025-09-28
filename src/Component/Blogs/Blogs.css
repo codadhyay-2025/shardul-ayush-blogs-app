@@ -1,0 +1,43 @@
+.backgroundcolr{
+    
+    /* width: 100%; */
+    /* background-color: lightgray; */
+    /* height: 650px; */
+}
+.blogspage{
+    background-color: rgb(195, 195, 89);
+    width: 74%;
+    margin: auto;
+    text-align: start;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 5px;
+
+}
+.blogspagenameandcretenewbutton{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.blogsname{
+    font-size: 30px;
+    font-weight: bold;
+}
+.cratenewpostbutton{
+    background-color: rgb(47, 66, 187);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: gray;
+}
+.firstblog{
+    background-color: white;
+    padding: 20px;
+}
+.blogstitle{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0px;
+
+}
