@@ -1,0 +1,66 @@
+.DescriptionBodysection {
+    
+    padding: 9px;
+    border-radius: 5px;
+    margin-right: 145;
+    margin-left: 145;
+    margin-top: 25;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.Textarea{
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: whitesmoke;
+    width: 70%;
+    border-radius: 8px;
+    margin-left: 115px;
+    margin-top: 15px;
+    height: 80%;
+    
+    
+}
+
+.DescriptionTitle {
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    width: 99%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.DescriptionSepratingLine {
+    border-color: 1px solid
+}
+
+.DescriptionTextArea {
+    border-radius: 5px;
+    border-color: 1px solid;
+    
+     width:99%;     /* fixed width */
+      height: 140px;    /* fixed height */
+      resize: none;     /* 🚫 disables manual resize */
+      overflow: auto; 
+    
+}
+
+.DescriptionCancelButton {
+    background-color: navy;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin-left:85%;
+}
+
+.DescriptionSaveButton {
+    background-color: navy;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 26px;
+}
