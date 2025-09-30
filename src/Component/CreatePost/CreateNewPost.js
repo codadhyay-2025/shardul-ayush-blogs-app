@@ -1,5 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import './CreateNewPost.css';
 function CreateNewPost(){
+    const navigate=useNavigate();
+
+    
     return(
 <div>
       <div className='DescriptionBodysection'>

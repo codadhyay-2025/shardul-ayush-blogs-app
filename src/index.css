@@ -1,15 +1,18 @@
 body {
   margin: 0px;
+  padding: 0px;
   /* background-color: lightgray; */
-    text-align: center;
-  min-width: 100%;  
-  min-height: 670px;
+    /* text-align: center; */
+  /* width: 100;  */
+  /* height:100px; */
   background-size: cover;
-  background-size: auto;
-  background-size: 1750px 950px;
+  /* background-size: auto; */
+  /* background-size: 1750px 950px; */
   /* opacity: 0.2; */
-  /* background-repeat: no-repeat; */
-  background-image: url("https://img.freepik.com/free-photo/technology-communication-icons-symbols-concept_53876-120314.jpg");
+  background-repeat: no-repeat;
+  
+  height: 200px;
+  background-image: url("https://img.freepik.com/free-photo/technology-communication-icons-symbols-concept_53876-120314.jpg ");
   
   /* background-image: ; */
   /* margin: 0;

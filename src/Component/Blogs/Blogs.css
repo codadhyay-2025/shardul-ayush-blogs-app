@@ -1,11 +1,19 @@
 .backgroundcolr{
+      position: sticky;
+    top: 40px;
     
     /* width: 100%; */
     /* background-color: lightgray; */
     /* height: 650px; */
 }
 .blogspage{
+<<<<<<< HEAD
     background-color:rgb(216, 204, 189) ;
+=======
+    position: sticky;
+    top: 40px;
+    background-color: rgb(195, 195, 89);
+>>>>>>> 40dc1b94e955b752698012f820e8f0f8d1693a6c
     width: 74%;
     margin: auto;
     text-align: start;
@@ -38,10 +46,39 @@
 .firstblog{
     background-color: white;
     padding: 20px;
+      position: sticky;
+    top: 40px;
 }
 .blogstitle{
     font-size: 35px;
     font-weight: bold;
     padding: 10px 0px;
 
+}
+.lastbuttons{
+    display: flex
+;justify-content: space-between;
+margin-top: 25px;
+gap: 20px;
+}
+.footerbuttons{
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: none;
+    /* background-color: white; */
+}
+.like{
+    background-color: rgb(255, 123, 123);
+    color: white;
+}
+.dislike{
+    background-color: rgb(211, 202, 202);
+    /* color: ; */
+}
+.edit{
+    background-color: rgb(163, 162, 162);
+}
+.delete{
+    background-color: red;
 }
