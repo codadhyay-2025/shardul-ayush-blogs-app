@@ -5,7 +5,7 @@
     /* height: 650px; */
 }
 .blogspage{
-    background-color: rgb(195, 195, 89);
+    background-color:rgb(216, 204, 189) ;
     width: 74%;
     margin: auto;
     text-align: start;
@@ -24,11 +24,15 @@
     font-size: 30px;
     font-weight: bold;
 }
+.createNewPostIcon{
+    font-size: 16px;
+    margin-right: 6px;
+}
 .cratenewpostbutton{
-    background-color: rgb(47, 66, 187);
+    background-color: rgb(125, 82, 82);
     color: white;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 9px;
     box-shadow: gray;
 }
 .firstblog{

@@ -5,7 +5,7 @@ function Header(){
   const navigate=useNavigate();
 
  const navigateToDashboard=()=>{
-    navigate('/.')
+    navigate('/')
  }
  const navigateToregister=()=>{
     navigate("/register")
@@ -18,8 +18,8 @@ const navigateToLogin =()=>{
     <div className="pageheader">
         <div className='headerblog' onClick={navigateToDashboard}>Blogs</div>
         <div className='loginregisterbutton'>
-        <div onClick={navigateToLogin}>Login </div>
-        <div onClick={navigateToregister}>Register</div>
+        <div onClick={navigateToLogin}><i class="fa fa-user-circle-o LoginIcon" aria-hidden="true"></i>Login </div>
+        <div onClick={navigateToregister}><i class="fa fa-registered RegisterIcon" aria-hidden="true"></i>Register</div>
         </div>
         
 

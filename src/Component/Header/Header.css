@@ -12,6 +12,14 @@
 .headerblog{
     font-size: 25px;
 }
+.LoginIcon{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.RegisterIcon{
+     font-size: 18px;
+    margin-right: 6px;
+}
 .loginregisterbutton{
     display: flex;
     justify-content:space-between;

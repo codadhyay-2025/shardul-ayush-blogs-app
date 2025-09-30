@@ -8,7 +8,7 @@ function Blogs() {
                         <div className='blogspagenameandcretenewbutton'>
 
                             <div className='blogsname'>Blogs</div>
-                            <div className='cratenewpostbutton'>create new post</div>
+                            <div className='cratenewpostbutton'><i class="fa fa-plus-circle createNewPostIcon "  aria-hidden="true"></i>create new post</div>
                         </div>
                         <div>Public your passion, in your way...</div>
                         <hr />
