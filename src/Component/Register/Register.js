@@ -1,5 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import './Register.css';
 function Register() {
+
+    const navigate=useNavigate();
+    const navigateToLogin =()=>{
+        navigate("/login")
+    }
     return (
         <div className='registerSectionbackgroundiamge'>
 
@@ -20,7 +26,7 @@ function Register() {
                     <input type='text' placeholder='test@gmail.com' className='Allinput' />
                     <div className='inputlabel'>password</div>
                     <input type="password" placeholder="pass1234" className='Allinput' />
-                    <button className='registersandloginpageButton'>Register</button>
+                    <button className='registersandloginpageButton' onClick={navigateToLogin}>Register</button>
                 </div>
             </div>
         </div>
