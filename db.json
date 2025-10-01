@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "blog": [
     {
       "id": "627f"
@@ -7,6 +8,17 @@
       "id": "f181",
       "Title": "Blog",
       "Description": "hiiii"
+=======
+  "users": [
+    {
+      "id": "ecda"
+    },
+    {
+      "id": "eb97",
+      "username": "sp",
+      "userEmail": "sp",
+      "userPassword": "sp"
+>>>>>>> 06632d07b45b61e4bf3a7afa7a138d1bb1068ba9
     }
   ]
 }
