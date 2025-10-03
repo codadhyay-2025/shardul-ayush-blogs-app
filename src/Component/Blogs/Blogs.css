@@ -1,5 +1,4 @@
 .backgroundcolr {
-    position: sticky;
     top: 40px;
 }
 
@@ -42,7 +41,8 @@
 .firstblog {
     background-color: white;
     padding: 20px;
-    position: sticky;
+    margin-bottom: 25px;
+    border-radius: 8px;
     top: 40px;
 }
 
@@ -68,19 +68,40 @@
 }
 
 .like {
-    background-color: rgb(255, 123, 123);
+    background-color:rgb(8, 101, 8);
+
     color: white;
 }
 
 .dislike {
-    background-color: rgb(211, 202, 202);
+    background-color: rgb(197, 50, 50);
+    color: white;
+    margin-right: 5px;
+
+    
+
+    }
+.LikeIcon{
+margin-right: 6px;
+
+}
+.DislikeIcon{
+margin-right: 6px;
 
 }
 
 .edit {
-    background-color: rgb(163, 162, 162);
+    background-color:rgb(8, 101, 8);
+    color: white;
 }
 
 .delete {
-    background-color: red;
+    background-color: rgb(197, 50, 50);
+    color: white;
+}
+.EditIcon{
+margin-right: 6px;
+}
+.DeleteIcon{
+margin-right: 6px;
 }

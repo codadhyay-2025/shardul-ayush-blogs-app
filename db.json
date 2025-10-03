@@ -1,8 +1,17 @@
 {
-  "users": [
+  "blog": [
     {
-      "id": "ecda"
+      "id": "f181",
+      "Title": "Blog",
+      "Description": "hiiii"
     },
+    {
+      "id": "738b",
+      "Title": "BLOG",
+      "Description": "FRIDAY...\n"
+    }
+  ],
+  "users": [
     {
       "id": "eb97",
       "username": "sp",
@@ -10,10 +19,10 @@
       "userPassword": "sp"
     },
     {
-      "id": "d8d1",
-      "username": "shardul sampat pawar",
-      "userEmail": "sp@53gmail.com",
-      "userPassword": "pass1234"
-    }
+      "id": "ed85",
+      "username": "ayush kanase ",
+      "userEmail": "kanaseayush4@gmail.com",
+      "userPassword": "12345"
+    }   
   ]
 }
