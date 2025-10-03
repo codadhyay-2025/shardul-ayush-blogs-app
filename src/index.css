@@ -11,7 +11,8 @@ body {
   /* opacity: 0.2; */
   background-repeat: no-repeat;
   
-  height: 200px;
+  height: 100vh;
+  
   background-image: url("https://img.freepik.com/free-photo/technology-communication-icons-symbols-concept_53876-120314.jpg ");
 }
 
