@@ -21,7 +21,7 @@ function Register() {
       .then(response => { 
         
         alert("Registration successful!");
-        //   navigate("/login"); 
+          navigate("/login"); 
         console.log(userdata)
      
       })
