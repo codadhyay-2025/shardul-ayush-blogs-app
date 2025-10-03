@@ -9,13 +9,13 @@ function CreateNewPost() {
      const[userDescriptiondata,setuserDescriptionData]=useState({Title:"",Description:""});
    function handelChangeDescription (){
        console.log(userDescriptiondata)
-       navigate("/description")
+       navigate("/blogs")
    }
    function handelChangeDescription(){
     axios.post('http://localhost:3001/blog',userDescriptiondata)
     .then(response=>{
         alert("Title updated Successfully")
-        navigate("/description ")
+        navigate("/blogs ")
     })
     .catch(error=>{
         console.error("Title updated Failed",error);
