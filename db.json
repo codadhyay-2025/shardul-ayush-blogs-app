@@ -1,24 +1,28 @@
 {
-<<<<<<< HEAD
   "blog": [
-    {
-      "id": "627f"
-    },
     {
       "id": "f181",
       "Title": "Blog",
       "Description": "hiiii"
-=======
-  "users": [
-    {
-      "id": "ecda"
     },
+    {
+      "id": "738b",
+      "Title": "BLOG",
+      "Description": "FRIDAY...\n"
+    }
+  ],
+  "users": [
     {
       "id": "eb97",
       "username": "sp",
       "userEmail": "sp",
       "userPassword": "sp"
->>>>>>> 06632d07b45b61e4bf3a7afa7a138d1bb1068ba9
-    }
+    },
+    {
+      "id": "ed85",
+      "username": "ayush kanase ",
+      "userEmail": "kanaseayush4@gmail.com",
+      "userPassword": "12345"
+    }   
   ]
 }
