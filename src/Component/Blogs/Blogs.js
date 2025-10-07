@@ -6,9 +6,7 @@ import { useState } from "react";
 import './Blogs.css';
 function Blogs() {
     const navigate = useNavigate();
-    const navigateToCreatenewpost = () => {
-        navigate('/createnewpost')
-    }
+   
         const[blog,setBlog]=useState([])
 
     useEffect(() => {
@@ -21,6 +19,14 @@ function Blogs() {
         axios.delete(`http://localhost:3001/blog/${id}`).then(()=>{
             setBlog(blog.filter((b)=>b.id !==id));
         });
+    }
+    const handelEdit=(id)=>{
+        navigate("/createnewpost/"+id)
+        
+    }
+    
+    const navigateToCreatenewpost=()=>{
+        navigate("/createnewpost")
     }
 
 
@@ -36,7 +42,7 @@ function Blogs() {
                         <div className='blogspagenameandcretenewbutton'>
 
                             <div className='blogsname'>Blogs</div>
-                            <div className='cratenewpostbutton' onClick={navigateToCreatenewpost}><i class="fa fa-plus-circle createNewPostIcon " aria-hidden="true"></i>create new post</div>
+                            <div className='cratenewpostbutton' onClick={navigateToCreatenewpost}><i class="fa fa-plus-circle createNewPostIcon " aria-hidden="true"></i>Create new post</div>
                         </div>
                         <div>Public your passion, in your way...</div>
                         <hr />
@@ -60,7 +66,7 @@ function Blogs() {
                                     <button className='footerbuttons dislike'><i class="fa fa-thumbs-down  DislikeIcon" aria-hidden="true"></i>Dislike</button>
                                 </div>
                                 <div className='lastbuttons'>
-                                    <button className='footerbuttons edit'><i class="fa fa-pencil EditIcon" aria-hidden="true"></i>Edit</button>
+                                    <button className='footerbuttons edit'onClick={()=>handelEdit(blog.id)}><i class="fa fa-pencil EditIcon" aria-hidden="true"></i>Edit</button>
                                     <button className='footerbuttons delete' onClick={()=>handelDelete(blog.id)}><i class="fa fa-trash DeleteIcon" aria-hidden="true"></i>Delete</button>
                                 </div>
                             </div>
