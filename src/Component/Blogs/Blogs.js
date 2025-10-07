@@ -7,10 +7,8 @@ import './Blogs.css';
 function Blogs() {
     // const[likes,setlikes]=useState({})
     const navigate = useNavigate();
-    const navigateToCreatenewpost = () => {
-        navigate('/createnewpost')
-    }
-    const [blog, setBlog] = useState([])
+   
+        const[blog,setBlog]=useState([])
 
 
 
@@ -54,9 +52,33 @@ function Blogs() {
 
         // console.log(likes);
     }
+    const handleDislike =()=>{
+          const userdislike = localStorage.getItem('useremail')
+
+
+        if (blog.likes.includes(userdislike)) {
+
+        }
+        else{
+        const updateLikes = [...blog.likes, userdislike]
+        axios.patch("http://localhost:3001/blog/" +blog.id, { likes: updateLikes })
+        .then(()=>{
+            getJsonData()
+        })
+        .catch(error => console.log("failed to udate like:",error));
 
     }
 
+    }
+
+    const handelEdit=(id)=>{
+        navigate("/createnewpost/"+id)
+        
+    }
+    
+    const navigateToCreatenewpost=()=>{
+        navigate("/createnewpost")
+    }
 
 
 
@@ -70,7 +92,7 @@ function Blogs() {
                         <div className='blogspagenameandcretenewbutton'>
 
                             <div className='blogsname'>Blogs</div>
-                            <div className='cratenewpostbutton' onClick={navigateToCreatenewpost}><i class="fa fa-plus-circle createNewPostIcon " aria-hidden="true"></i>create new post</div>
+                            <div className='cratenewpostbutton' onClick={navigateToCreatenewpost}><i class="fa fa-plus-circle createNewPostIcon " aria-hidden="true"></i>Create new post</div>
                         </div>
                         <div>Public your passion, in your way...</div>
                         <hr />
@@ -91,11 +113,11 @@ function Blogs() {
                             <div className='lastbuttons'>
                                 <div className='lastbuttons'>
                                     <button className='footerbuttons like' onClick={() => handlelike(blog)}><i class="fa fa-thumbs-up  LikeIcon" aria-hidden="true"></i>{blog.likes.length}Like</button>
-                                    <button className='footerbuttons dislike'><i class="fa fa-thumbs-down  DislikeIcon" aria-hidden="true"></i>Dislike</button>
+                                    <button className='footerbuttons dislike' onClick={() =>handleDislike(blog)}><i class="fa fa-thumbs-down  DislikeIcon" aria-hidden="true"></i>Dislike</button>
                                 </div>
                                 <div className='lastbuttons'>
-                                    <button className='footerbuttons edit' ><i class="fa fa-pencil EditIcon" aria-hidden="true"></i>Edit</button>
-                                    <button className='footerbuttons delete' onClick={() => handelDelete(blog.id)}><i class="fa fa-trash DeleteIcon" aria-hidden="true"></i>Delete</button>
+                                    <button className='footerbuttons edit'onClick={()=>handelEdit(blog.id)}><i class="fa fa-pencil EditIcon" aria-hidden="true"></i>Edit</button>
+                                    <button className='footerbuttons delete' onClick={()=>handelDelete(blog.id)}><i class="fa fa-trash DeleteIcon" aria-hidden="true"></i>Delete</button>
                                 </div>
                             </div>
                         </div>
