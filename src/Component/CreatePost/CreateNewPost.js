@@ -6,13 +6,22 @@ import  { useState } from "react";
 
 function CreateNewPost() {
     const navigate = useNavigate();
-     const[userDescriptiondata,setuserDescriptionData]=useState({Title:"",Description:""});
+     const[userDescriptiondata,setuserDescriptionData]=useState({Title:"",Description:"",likes:[]});
+     const userName=localStorage.getItem("useremail")
+     console.log(userName);
+     
    function handelChangeDescription (){
        console.log(userDescriptiondata)
        navigate("/blogs")
    }
    function handelChangeDescription(){
-    axios.post('http://localhost:3001/blog',userDescriptiondata)
+    
+    
+    axios.post('http://localhost:3001/blog',{
+        ...userDescriptiondata,
+        createdby:userName,
+        createdAt:""
+    })
     .then(response=>{
         alert("Title updated Successfully")
         navigate("/blogs ")
