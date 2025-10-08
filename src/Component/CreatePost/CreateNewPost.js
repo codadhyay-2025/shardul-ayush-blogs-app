@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 function CreateNewPost() {
     const{id}=useParams();
     const navigate = useNavigate();
-     const[userDescriptiondata,setuserDescriptionData]=useState({Title:"",Description:"",likes:[]});
+     const[userDescriptiondata,setuserDescriptionData]=useState({Title:"",Description:"",likes:[],dislikes:[]});
      const userName=localStorage.getItem("useremail")
      console.log(userName);
      

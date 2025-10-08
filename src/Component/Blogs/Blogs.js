@@ -31,7 +31,7 @@ function Blogs() {
         // })
     }, []);
     const handelDelete = (id) => {
-        axios.delete(`http://localhost:3001/blog/${id}`).then(() => {
+        axios.dele+te(`http://localhost:3001/blog/${id}`).then(() => {
             setBlog(blog.filter((b) => b.id !== id));
         });
     }
@@ -52,24 +52,26 @@ function Blogs() {
 
         // console.log(likes);
     }
-    const handleDislike =()=>{
-          const userdislike = localStorage.getItem('useremail')
+
+        
+    }
+    const handleDislike =(blog)=>{
+        const userdislike = localStorage.getItem('useremail')
 
 
-        if (blog.likes.includes(userdislike)) {
+        if (blog.dislikes.includes(userdislike)) {
 
         }
         else{
-        const updateLikes = [...blog.likes, userdislike]
-        axios.patch("http://localhost:3001/blog/" +blog.id, { likes: updateLikes })
+        const updateLikes = [...blog.dislikes, userdislike]
+        axios.patch("http://localhost:3001/blog/" +blog.id, { dislikes: updateLikes })
         .then(()=>{
             getJsonData()
         })
         .catch(error => console.log("failed to udate like:",error));
 
     }
-
-    }
+}
 
     const handelEdit=(id)=>{
         navigate("/createnewpost/"+id)
@@ -112,8 +114,8 @@ function Blogs() {
                             {/* last button section start from here */}
                             <div className='lastbuttons'>
                                 <div className='lastbuttons'>
-                                    <button className='footerbuttons like' onClick={() => handlelike(blog)}><i class="fa fa-thumbs-up  LikeIcon" aria-hidden="true"></i>{blog.likes.length}Like</button>
-                                    <button className='footerbuttons dislike' onClick={() =>handleDislike(blog)}><i class="fa fa-thumbs-down  DislikeIcon" aria-hidden="true"></i>Dislike</button>
+                                    <button className='footerbuttons like' onClick={() => handlelike(blog)}><i class="fa fa-thumbs-up  LikeIcon" aria-hidden="true"></i>{blog.likes.length }Like</button>
+                                    <button className='footerbuttons dislike' onClick={() => handleDislike(blog)}><i class="fa fa-thumbs-down  DislikeIcon" aria-hidden="true">{blog.dislikes.length}</i>Dislike</button>
                                 </div>
                                 <div className='lastbuttons'>
                                     <button className='footerbuttons edit'onClick={()=>handelEdit(blog.id)}><i class="fa fa-pencil EditIcon" aria-hidden="true"></i>Edit</button>

@@ -1,77 +1,15 @@
 {
   "blog": [
     {
-      "id": "738b",
-      "Title": "BLOG",
-      "Description": "FRIDAY...\n",
-      "likes": [
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "shardul",
-        "aa"
-      ],
-      "createdby": "",
-      "Description": "FRIDAY...\nvcfchgjvbkn,"
-    },
-    {
-      "id": "140e",
-      "Title": "shardul",
-      "Description": "shshjs",
-      "likes": [
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "sp",
-        "shardul",
-        "aa"
-      ]
-    },
-    {
-      "id": "344c",
-      "Title": "sbaskjba",
-      "Description": "asmncbkjdsb",
+      "id": "2f87",
+      "Title": "sp",
+      "Description": "sl",
       "likes": [
         "sp"
       ],
-      "createdby": "trushanimse07@gmail.com",
-      "createdAt": "",
-      "id": "e77e",
-      "Title": "ss",
-      "Description": "sss"
-    },
-    {
-      "id": "66aa",
-      "Title": "ss",
-      "Description": "ss"
-    },
-    {
-      "id": "7695",
-      "Title": "sp",
-      "Description": "ss"
+      "dislikes": [
+        "sp"
+      ]
     }
   ],
   "users": [
@@ -115,7 +53,9 @@
       "id": "ed0e",
       "username": "aa",
       "userEmail": "aa",
-      "userPassword": "aa"},{
+      "userPassword": "aa"
+    },
+    {
       "id": "07ef",
       "username": "shardul",
       "userEmail": "shardul",
